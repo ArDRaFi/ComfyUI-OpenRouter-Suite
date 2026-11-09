@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-openrouter-suite"
+description = "Use OpenRouter's image, video, LLM and audio models in ComfyUI with your own API key. Each node adapts to the selected model, and new models appear automatically."
+version = "0.1.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/ArDRaFi/ComfyUI-OpenRouter-Suite"
+
+[tool.comfy]
+DisplayName = "OpenRouter Suite"
+requires-comfyui = ">=0.37.0"

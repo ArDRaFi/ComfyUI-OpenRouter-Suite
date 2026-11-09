@@ -1,0 +1,410 @@
+{
+ "id": "77e62fd2-662b-4a1e-898b-c5862fc335bc",
+ "revision": 0,
+ "last_node_id": 4,
+ "last_link_id": 3,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "LoadImage",
+   "pos": [
+    40,
+    80
+   ],
+   "size": [
+    282.798828125,
+    102
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "COMBO",
+     "widget": {
+      "name": "image"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "choose file to upload",
+     "name": "upload",
+     "type": "IMAGEUPLOAD",
+     "widget": {
+      "name": "upload"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "IMAGE",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      1
+     ]
+    },
+    {
+     "localized_name": "MASK",
+     "name": "MASK",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "example.png",
+    "image"
+   ],
+   "widgets_values_named": {
+    "image": "example.png",
+    "upload": "image"
+   }
+  },
+  {
+   "id": 2,
+   "type": "LoadImage",
+   "pos": [
+    40,
+    460
+   ],
+   "size": [
+    282.798828125,
+    102
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "COMBO",
+     "widget": {
+      "name": "image"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "choose file to upload",
+     "name": "upload",
+     "type": "IMAGEUPLOAD",
+     "widget": {
+      "name": "upload"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "IMAGE",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      2
+     ]
+    },
+    {
+     "localized_name": "MASK",
+     "name": "MASK",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "example.png",
+    "image"
+   ],
+   "widgets_values_named": {
+    "image": "example.png",
+    "upload": "image"
+   }
+  },
+  {
+   "id": 3,
+   "type": "ORS_Video",
+   "pos": [
+    420,
+    80
+   ],
+   "size": [
+    400,
+    340
+   ],
+   "flags": {},
+   "order": 3,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "continue_job_id",
+     "name": "continue_job_id",
+     "shape": 7,
+     "type": "STRING",
+     "link": null
+    },
+    {
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "model",
+     "name": "model",
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "widget": {
+      "name": "model"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "image_1",
+     "name": "model.images.image_1",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "duration",
+     "name": "model.duration",
+     "type": "COMBO",
+     "widget": {
+      "name": "model.duration"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "resolution",
+     "name": "model.resolution",
+     "type": "COMBO",
+     "widget": {
+      "name": "model.resolution"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "aspect_ratio",
+     "name": "model.aspect_ratio",
+     "type": "COMBO",
+     "widget": {
+      "name": "model.aspect_ratio"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "generate_audio",
+     "name": "model.generate_audio",
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "model.generate_audio"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "first_frame",
+     "name": "model.first_frame",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 1
+    },
+    {
+     "localized_name": "last_frame",
+     "name": "model.last_frame",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 2
+    },
+    {
+     "localized_name": "provider_options",
+     "name": "model.provider_options",
+     "shape": 7,
+     "type": "STRING",
+     "widget": {
+      "name": "model.provider_options"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "seed",
+     "name": "seed",
+     "type": "INT",
+     "widget": {
+      "name": "seed"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "VIDEO",
+     "name": "VIDEO",
+     "type": "VIDEO",
+     "links": [
+      3
+     ]
+    },
+    {
+     "localized_name": "job_id",
+     "name": "job_id",
+     "type": "STRING",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ORS_Video"
+   },
+   "widgets_values": [
+    "A smooth camera move from the first image to the last image.",
+    "google/veo-3.1-fast",
+    6,
+    "720p",
+    "16:9",
+    true,
+    "",
+    0,
+    "fixed"
+   ],
+   "widgets_values_named": {
+    "prompt": "A smooth camera move from the first image to the last image.",
+    "model": "google/veo-3.1-fast",
+    "model.duration": 6,
+    "model.resolution": "720p",
+    "model.aspect_ratio": "16:9",
+    "model.generate_audio": true,
+    "model.provider_options": "",
+    "seed": 0,
+    "control_after_generate": "fixed"
+   }
+  },
+  {
+   "id": 4,
+   "type": "SaveVideo",
+   "pos": [
+    880,
+    80
+   ],
+   "size": [
+    270,
+    106
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "video",
+     "name": "video",
+     "type": "VIDEO",
+     "link": 3
+    },
+    {
+     "localized_name": "filename_prefix",
+     "name": "filename_prefix",
+     "type": "STRING",
+     "widget": {
+      "name": "filename_prefix"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "codec",
+     "name": "format.codec",
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "widget": {
+      "name": "format.codec"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "format",
+     "name": "format",
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "widget": {
+      "name": "format"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "codec",
+     "name": "codec",
+     "shape": 7,
+     "type": "COMFY_DYNAMICCOMBO_V3",
+     "widget": {
+      "name": "codec"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "video",
+     "name": "video",
+     "type": "VIDEO",
+     "links": null
+    }
+   ],
+   "properties": {},
+   "widgets_values": [
+    "video/ComfyUI",
+    "auto",
+    "auto",
+    "auto"
+   ],
+   "widgets_values_named": {
+    "filename_prefix": "video/ComfyUI",
+    "format": "auto",
+    "format.codec": "auto",
+    "codec": "auto"
+   }
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   0,
+   3,
+   8,
+   "IMAGE"
+  ],
+  [
+   2,
+   2,
+   0,
+   3,
+   9,
+   "IMAGE"
+  ],
+  [
+   3,
+   3,
+   0,
+   4,
+   0,
+   "VIDEO"
+  ]
+ ],
+ "groups": [],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.9,
+   "offset": [
+    416,
+    110
+   ]
+  }
+ },
+ "version": 0.4
+}

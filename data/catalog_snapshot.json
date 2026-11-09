@@ -1,0 +1,15026 @@
+{
+"audio": {
+"google/lyria-3-clip-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"google/lyria-3-pro-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"openai/gpt-audio": {
+"inputs": [
+"text",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-audio-mini": {
+"inputs": [
+"text",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+}
+},
+"fetched_at": 1794211263.3896418,
+"image": {
+"black-forest-labs/flux-3-image": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"21:9",
+"2:1",
+"16:9",
+"3:2",
+"7:5",
+"4:3",
+"5:4",
+"1:1",
+"4:5",
+"3:4",
+"5:7",
+"2:3",
+"9:16",
+"1:2",
+"9:21",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"768",
+"1K",
+"1.5K",
+"2K",
+"4K"
+]
+}
+}
+},
+"black-forest-labs/flux-3-image-klein": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"21:9",
+"2:1",
+"16:9",
+"3:2",
+"7:5",
+"4:3",
+"5:4",
+"1:1",
+"4:5",
+"3:4",
+"5:7",
+"2:3",
+"9:16",
+"1:2",
+"9:21",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"jpeg",
+"png"
+]
+},
+"resolution": {
+"type": "enum",
+"values": [
+"768",
+"1K",
+"1.5K",
+"2K",
+"4K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"black-forest-labs/flux.2-flex": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 8,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"black-forest-labs/flux.2-klein-4b": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 4,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"black-forest-labs/flux.2-max": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 8,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"black-forest-labs/flux.2-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 8,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"bytedance-seed/seedream-4.5": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"9:19.5",
+"19.5:9",
+"9:20",
+"20:9",
+"9:21",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"bytedance-seed/seedream-5-0-flash": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"9:19.5",
+"19.5:9",
+"9:20",
+"20:9",
+"9:21",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"bytedance-seed/seedream-5-0-lite": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"9:19.5",
+"19.5:9",
+"9:20",
+"20:9",
+"9:21",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 4,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"2K",
+"4K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"bytedance-seed/seedream-5-0-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"9:19.5",
+"19.5:9",
+"9:20",
+"20:9",
+"9:21",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"google/gemini-2.5-flash-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 3,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+}
+}
+},
+"google/gemini-3-pro-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"google/gemini-3-pro-image-preview": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:3",
+"3:2",
+"3:4",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"google/gemini-3.1-flash-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:4",
+"1:8",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"8:1",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"512",
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"google/gemini-3.1-flash-image-preview": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:4",
+"1:8",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"8:1",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"512",
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"google/gemini-3.1-flash-lite-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:4",
+"1:8",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"8:1",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K"
+]
+}
+}
+},
+"google/gemini-nano-banana-2.1": {
+"inputs": [
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:4",
+"1:8",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"8:1",
+"9:16",
+"16:9",
+"21:9"
+]
+},
+"input_references": {
+"max": 14,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"krea/k3-edit": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:2",
+"16:9",
+"4:5",
+"2:3",
+"9:16"
+]
+},
+"input_references": {
+"max": 8,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"krea/krea-2-large": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:2",
+"16:9",
+"4:5",
+"2:3",
+"9:16"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"krea/krea-2-medium": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:2",
+"16:9",
+"4:5",
+"2:3",
+"9:16"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"krea/krea-2-medium-turbo": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:2",
+"16:9",
+"4:5",
+"2:3",
+"9:16"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"meta/muse-image": {
+"inputs": [
+"text",
+"image"
+],
+"params": {}
+},
+"microsoft/mai-image-2.5": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+}
+}
+},
+"microsoft/mai-image-2.5-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+}
+}
+},
+"microsoft/mai-image-2.6": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"input_references": {
+"max": 5,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+}
+}
+},
+"microsoft/mai-image-2.6-flash": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"input_references": {
+"max": 5,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+}
+}
+},
+"openai/gpt-5-image": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-5-image-mini": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-5.4-image-2": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-image-1": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-image-1-mini": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-image-2": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high"
+]
+}
+}
+},
+"openai/gpt-image-2.5-flare": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high",
+"xhigh",
+"max"
+]
+}
+}
+},
+"openai/gpt-image-2.5-sunburst": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high",
+"xhigh",
+"max"
+]
+}
+}
+},
+"openai/gpt-image-2.6-flare": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp",
+"gif"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high",
+"xhigh",
+"max"
+]
+}
+}
+},
+"openai/gpt-image-2.6-sunburst": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 16,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"output_compression": {
+"max": 100,
+"min": 0,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp",
+"gif"
+]
+},
+"quality": {
+"type": "enum",
+"values": [
+"auto",
+"low",
+"medium",
+"high",
+"xhigh",
+"max"
+]
+}
+}
+},
+"qwen/qwen-image-2.1-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"1:4",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9"
+]
+},
+"input_references": {
+"max": 4,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"qwen/qwen-image-2.1-turbo": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"1:4",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9"
+]
+},
+"input_references": {
+"max": 4,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"qwen/qwen-image-3": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"1:4",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9"
+]
+},
+"input_references": {
+"max": 3,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"qwen/qwen-image-3-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"1:4",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9"
+]
+},
+"input_references": {
+"max": 3,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+},
+"seed": {
+"type": "boolean"
+}
+}
+},
+"recraft/recraft-v3": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4-pro-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"recraft/recraft-v4-styles": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:1",
+"1:2",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"5:4",
+"4:5",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4-styles-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:1",
+"1:2",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"5:4",
+"4:5",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4-styles-pro-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:1",
+"1:2",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"5:4",
+"4:5",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"recraft/recraft-v4-styles-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"2:1",
+"1:2",
+"3:2",
+"2:3",
+"4:3",
+"3:4",
+"5:4",
+"4:5",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 1,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"recraft/recraft-v4-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"recraft/recraft-v4.1": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4.1-flash": {
+"inputs": [
+"text"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4.1-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4.1-pro-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"recraft/recraft-v4.1-utility": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4.1-utility-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+}
+}
+},
+"recraft/recraft-v4.1-vector": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"16:9",
+"9:16",
+"auto"
+]
+},
+"input_references": {
+"max": 1,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 6,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"svg"
+]
+}
+}
+},
+"sourceful/riverflow-v2-fast": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 4,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"sourceful/riverflow-v2-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"input_references": {
+"max": 10,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"sourceful/riverflow-v2.5-fast": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 4,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"jpeg"
+]
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+}
+}
+},
+"sourceful/riverflow-v2.5-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 10,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+}
+}
+},
+"sourceful/riverflow-v2.6-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3",
+"5:4",
+"4:5",
+"16:9",
+"9:16",
+"21:9",
+"auto"
+]
+},
+"background": {
+"type": "enum",
+"values": [
+"auto",
+"transparent",
+"opaque"
+]
+},
+"input_references": {
+"max": 10,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"output_format": {
+"type": "enum",
+"values": [
+"png",
+"jpeg",
+"webp"
+]
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K",
+"4K"
+]
+},
+"size": {
+"type": "boolean"
+}
+}
+},
+"tencent/hy-image-v3.5-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"1:2",
+"1:4",
+"2:1",
+"2:3",
+"3:2",
+"3:4",
+"4:1",
+"4:3",
+"4:5",
+"5:4",
+"9:16",
+"16:9"
+]
+},
+"input_references": {
+"max": 20,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"1.5K",
+"2K",
+"4K"
+]
+},
+"seed": {
+"type": "boolean"
+},
+"size": {
+"type": "boolean"
+}
+}
+},
+"x-ai/grok-imagine-image-2.0": {
+"inputs": [
+"text",
+"image"
+],
+"params": {
+"aspect_ratio": {
+"type": "enum",
+"values": [
+"1:1",
+"3:4",
+"4:3",
+"9:16",
+"16:9",
+"2:3",
+"3:2",
+"9:19.5",
+"19.5:9",
+"9:20",
+"20:9",
+"1:2",
+"2:1",
+"auto"
+]
+},
+"input_references": {
+"max": 3,
+"min": 0,
+"type": "range"
+},
+"n": {
+"max": 1,
+"min": 1,
+"type": "range"
+},
+"quality": {
+"type": "enum",
+"values": [
+"low",
+"medium"
+]
+},
+"resolution": {
+"type": "enum",
+"values": [
+"1K",
+"2K"
+]
+}
+}
+}
+},
+"llm": {
+"aion-labs/aion-2.0": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"aion-labs/aion-3.0": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"aion-labs/aion-3.0-mini": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"aion-labs/aion-3.5": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"aion-labs/aion-3.5-mini": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"aion-labs/aion-rp-llama-3.1-8b": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"temperature",
+"top_p"
+]
+},
+"amazon/nova-2-lite-v1": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"amazon/nova-lite-v1": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"amazon/nova-micro-v1": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"amazon/nova-premier-v1": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"amazon/nova-pro-v1": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthracite-org/magnum-v4-72b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"anthropic/claude-fable-5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-fable-5.1": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-fable-5.1:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-fable-5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-haiku-4.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthropic/claude-haiku-4.5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthropic/claude-haiku-5.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-haiku-5.5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.1": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthropic/claude-opus-4.1:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools"
+]
+},
+"anthropic/claude-opus-4.5": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.5:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.6": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.6:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.7": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.7:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.8": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-4.8:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-5.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-5.5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-opus-5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-4.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthropic/claude-sonnet-4.5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"anthropic/claude-sonnet-4.6": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-4.6:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-5.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-5.5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"anthropic/claude-sonnet-5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"bytedance-seed/seed-1.6": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance-seed/seed-1.6-flash": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance-seed/seed-2-1-turbo": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance-seed/seed-2.0-code": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance-seed/seed-2.0-lite": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance-seed/seed-2.0-mini": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"bytedance/ui-tars-1.5-7b": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"cognitivecomputations/dolphin-mistral-24b-venice-edition": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"cohere/command-a": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"cohere/command-a-plus": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"cohere/command-r-08-2024": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"cohere/command-r-plus-08-2024": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"cohere/command-r7b-12-2024": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"cohere/north-mini-code:free": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-chat": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-chat-v3-0324": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logprobs",
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-chat-v3.1": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-r1-0528": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v3.1-terminus": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-v3.2": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v3.2-exp": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-flash-0731": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-flash-0731:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-flash-vision-exp": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-pro": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4-pro-0813": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4.1-flash": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4.1-flash-1017": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"deepseek/deepseek-v4.1-flash-1017:batch": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"deepseek/deepseek-v4.1-flash:batch": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"dots-studio/dots-3-note-preview:free": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"elorian/glimpse": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"fireworks/ember-1": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"google/gemini-2.5-flash": {
+"inputs": [
+"file",
+"image",
+"text",
+"audio",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-2.5-flash-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-2.5-flash-lite": {
+"inputs": [
+"text",
+"image",
+"file",
+"audio",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-2.5-pro": {
+"inputs": [
+"text",
+"image",
+"file",
+"audio",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-2.5-pro-preview": {
+"inputs": [
+"file",
+"image",
+"text",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3-flash-preview": {
+"inputs": [
+"text",
+"image",
+"file",
+"audio",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3-flash-preview:batch": {
+"inputs": [
+"text",
+"image",
+"file",
+"audio",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3-pro-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3-pro-image-preview": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-image-preview": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-lite": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-lite-image": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-lite-preview": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.1-flash-lite:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.1-pro-preview": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.1-pro-preview-customtools": {
+"inputs": [
+"text",
+"audio",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.1-pro-preview:batch": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.5-flash": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.5-flash-lite": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.5-flash-lite:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"google/gemini-3.5-flash:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.6-flash": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.6-flash:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"google/gemini-3.7-flash": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.7-flash:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"google/gemini-3.8-flash": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-3.8-flash:batch": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"google/gemini-4-argon": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-4-argon:batch": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-nano-banana-2.1": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemini-omni-1.1-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"google/gemini-omni-1.2-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"google/gemma-2-27b-it": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_p"
+]
+},
+"google/gemma-3-12b-it": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"google/gemma-3-27b-it": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"google/gemma-3-4b-it": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"google/gemma-4-26b-a4b-it": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"google/gemma-4-26b-a4b-it:free": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/gemma-4-31b-it": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"google/gemma-4-31b-it:free": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"google/lyria-3-clip-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"google/lyria-3-pro-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"temperature",
+"top_p"
+]
+},
+"gryphe/mythomax-l2-13b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"ibm-granite/granite-4.2-8b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"inclusionai/ling-3.0-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"inclusionai/ling-3.0-flash-vl": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"inclusionai/ling-3.0-tiny": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"inclusionai/ling-3.1-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"inference-net/schematron-v2-small": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"inference-net/schematron-v2-turbo": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"liquid/lfm-2.5-2.6b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"liquid/lfm-2.5-2.6b:free": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"liquid/lfm-2.5-24b-a2b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"liquid/lfm-3-1.7b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"liquid/lfm-3-1.7b:free": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"mancer/weaver": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meituan/longcat-2.0": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta-llama/llama-3.1-70b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"meta-llama/llama-3.1-8b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meta-llama/llama-3.2-1b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"meta-llama/llama-3.2-3b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meta-llama/llama-3.3-70b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meta-llama/llama-4-maverick": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meta-llama/llama-4-scout": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta-llama/llama-guard-4-12b": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-glimmer-30b": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-glimmer-30b:batch": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-1.1": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-1.2": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-1.2-contributor": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-1.3": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-1.3-contributor": {
+"inputs": [
+"text",
+"image",
+"video",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"meta/muse-spark-open": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"meta/muse-wonder": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"microsoft/phi-4": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"minimax/minimax-m1": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"minimax/minimax-m2.5": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"minimax/minimax-m2.7": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"minimax/minimax-m3": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"minimax/minimax-m3.1-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"minimax/minimax-m3:batch": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"mistralai/codestral-2508": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/devstral-2512": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/ministral-14b-2512": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/ministral-3b-2512": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/ministral-8b-2512": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-large": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-large-2407": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-large-2512": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-large-4-0": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"mistralai/mistral-medium-3": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-medium-3-5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-medium-3-5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-medium-3.1": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-nemo": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"mistralai/mistral-saba": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-small-24b-instruct-2501": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"mistralai/mistral-small-2603": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/mistral-small-3.1-24b-instruct": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"mistralai/mistral-small-3.2-24b-instruct": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"mistralai/mixtral-8x22b-instruct": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"mistralai/voxtral-small-24b-2507": {
+"inputs": [
+"text",
+"audio",
+"file"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"moondream/moondream3-preview": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"temperature",
+"top_p"
+]
+},
+"moondream/moondream3.1-9b-a2b": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"temperature",
+"top_p"
+]
+},
+"moonshotai/kimi-k2": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"moonshotai/kimi-k2-0905": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k2-thinking": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"moonshotai/kimi-k2.5": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k2.6": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k2.7-code": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k3": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k3.1-pro": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"moonshotai/kimi-k3:batch": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"morph/morph-v3-fast": {
+"inputs": [
+"text"
+],
+"params": [
+"logprobs",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"top_logprobs"
+]
+},
+"morph/morph-v3-fast:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature"
+]
+},
+"morph/morph-v3-large": {
+"inputs": [
+"text"
+],
+"params": [
+"logprobs",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"top_logprobs"
+]
+},
+"morph/morph-v3-large:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"logprobs",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"top_logprobs"
+]
+},
+"nex-agi/nex-n2.5-mini": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nex-agi/nex-n2.5-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nousresearch/hermes-4-405b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nvidia/nemotron-3-nano-30b-a3b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": {
+"inputs": [
+"text",
+"audio",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"nvidia/nemotron-3-super-120b-a12b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nvidia/nemotron-3-ultra-550b-a55b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"nvidia/nemotron-3-ultra-550b-a55b:free": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"nvidia/nemotron-3.5-content-safety": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"nvidia/nemotron-3.5-lightning": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nvidia/nemotron-3.5-lightning:free": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"nvidia/nemotron-3.5-super-vl": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"nvidia/nemotron-3.5-super-vl:free": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"nvidia/switchyard": {
+"inputs": [
+"text"
+],
+"params": []
+},
+"openai/gpt-3.5-turbo-0613": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-3.5-turbo-16k": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-4": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-4-turbo:batch": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-4.1": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_completion_tokens",
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4.1-mini": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_completion_tokens",
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4.1-mini:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4.1-nano": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_completion_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4.1-nano:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4.1:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/gpt-4o": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-2024-05-13": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-2024-08-06": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-2024-11-20": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-mini": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-mini-2024-07-18": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o-mini:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-4o:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"prediction",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openai/gpt-5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-image": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"openai/gpt-5-image-mini": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"openai/gpt-5-mini": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-mini:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-nano": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-nano:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-pro": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5-pro:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.1": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.1-codex": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.1-codex-max": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.1-codex-mini": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.1:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2-chat": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"max_completion_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2-codex": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2-pro": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2-pro:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.2:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.3-codex": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-image-2": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"top_logprobs",
+"verbosity"
+]
+},
+"openai/gpt-5.4-mini": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-mini:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-nano": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-nano:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-pro": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4-pro:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.4:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.5": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.5-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.5-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.5:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-luna": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-luna-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-luna-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-luna:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-sol": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-sol-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-sol-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-sol:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-terra": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-terra-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-terra-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5.6-terra:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-5:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-astra": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-astra-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-astra-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-astra:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-luna": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-luna-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-luna-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-luna:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-sol": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-sol-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-sol-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6-sol:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-sol": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-sol-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-sol-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-sol:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-terra": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-terra-pro": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-terra-pro:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-6.1-terra:batch": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"openai/gpt-audio": {
+"inputs": [
+"text",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-audio-mini": {
+"inputs": [
+"text",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-chat-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openai/gpt-oss-120b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-oss-120b:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"openai/gpt-oss-20b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"openai/gpt-oss-20b:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"openai/gpt-oss-safeguard-20b": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"openai/o3": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openai/o3-mini:batch": {
+"inputs": [
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openai/o3-pro": {
+"inputs": [
+"text",
+"file",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openai/o3:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openai/o4-mini:batch": {
+"inputs": [
+"image",
+"text",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools"
+]
+},
+"openrouter/auto": {
+"inputs": [
+"text",
+"image",
+"audio",
+"file",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"prediction",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p",
+"web_search_options"
+]
+},
+"openrouter/auto-beta": {
+"inputs": [
+"text",
+"image",
+"audio",
+"file",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"openrouter/auto-code": {
+"inputs": [
+"text",
+"image",
+"audio",
+"file",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"openrouter/bodybuilder": {
+"inputs": [
+"text"
+],
+"params": []
+},
+"openrouter/free": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"openrouter/fusion": {
+"inputs": [
+"text"
+],
+"params": []
+},
+"openrouter/pareto-code": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"particle-ai/particle-1": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"perceptron/perceptron-mk1": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"perceptron/perceptron-mk1.5": {
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"perplexity/sonar": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"temperature",
+"top_k",
+"top_p",
+"web_search_options"
+]
+},
+"perplexity/sonar-deep-research": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"temperature",
+"top_k",
+"top_p",
+"web_search_options"
+]
+},
+"perplexity/sonar-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"presence_penalty",
+"temperature",
+"top_k",
+"top_p",
+"web_search_options"
+]
+},
+"perplexity/sonar-pro-search": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p",
+"web_search_options"
+]
+},
+"perplexity/sonar-reasoning-pro": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"temperature",
+"top_k",
+"top_p",
+"web_search_options"
+]
+},
+"prism-ml/ternary-bonsai-2-27b": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"prism-ml/ternary-bonsai-2-9b": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen-2.5-72b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen-2.5-7b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen-2.5-coder-32b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen-plus": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen2.5-vl-72b-instruct": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-14b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-235b-a22b-2507": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-235b-a22b-thinking-2507": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3-30b-a3b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3-30b-a3b-instruct-2507": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-32b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-coder": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3-coder-30b-a3b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3-coder-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-coder-next": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-next-80b-a3b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-vl-235b-a22b-instruct": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-vl-30b-a3b-instruct": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3-vl-30b-a3b-thinking": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3-vl-8b-instruct": {
+"inputs": [
+"image",
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-122b-a10b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-27b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-35b-a3b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-397b-a17b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-9b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-flash-02-23": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3.5-plus-02-15": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.5-plus-20260420": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.6-27b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.6-35b-a3b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.6-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.6-plus": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.7-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.7-max": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.7-plus": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.7-plus:batch": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-2.4t-a95b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-27b": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-27b:batch": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"qwen/qwen3.8-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-max-0902": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-max-prime": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"qwen/qwen3.8-omni-flash": {
+"inputs": [
+"text",
+"image",
+"audio",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"recursive/flint-v1.0:free": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"reflection/beam-1.0-501b-a23b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"rekaai/reka-edge": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"rekaai/reka-flash-3": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"relace/relace-apply-3": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"seed",
+"stop"
+]
+},
+"relace/relace-search": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"ricursiveai/ripple-65b-preview": {
+"inputs": [
+"text"
+],
+"params": [
+"logprobs",
+"max_tokens",
+"response_format",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"sakana/fugu-max": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"tool_choice",
+"tools",
+"web_search_options"
+]
+},
+"sakana/fugu-ultra": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"tool_choice",
+"tools",
+"web_search_options"
+]
+},
+"sakana/fugu-ultra-v2": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"tool_choice",
+"tools",
+"web_search_options"
+]
+},
+"sakana/sakana-namazu": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"reasoning",
+"reasoning_effort",
+"structured_outputs",
+"tool_choice",
+"tools",
+"web_search_options"
+]
+},
+"sao10k/l3-lunaris-8b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"sao10k/l3.1-euryale-70b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"scaledown/extract": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"max_tokens"
+]
+},
+"scaledown/summarize": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"max_tokens"
+]
+},
+"stealth/crouton-alpha": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"stepfun/step-3.5-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"stepfun/step-3.7-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"stepfun/step-5-preview": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"tencent/hunyuan-a13b-instruct": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"tencent/hy-mt2-1.8b": {
+"inputs": [
+"text"
+],
+"params": [
+"max_completion_tokens",
+"max_tokens",
+"stop",
+"temperature"
+]
+},
+"tencent/hy-mt2-30b-a3b": {
+"inputs": [
+"text"
+],
+"params": [
+"max_completion_tokens",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature"
+]
+},
+"tencent/hy-mt2-7b": {
+"inputs": [
+"text"
+],
+"params": [
+"max_completion_tokens",
+"max_tokens",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature"
+]
+},
+"tencent/hy3": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"tencent/hy3-preview": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"seed",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"tencent/hy4": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools"
+]
+},
+"tencent/hy4-preview": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"thedrummer/cydonia-24b-v4.1": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"thedrummer/skyfall-36b-v2": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"thedrummer/unslopnemo-12b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"repetition_penalty",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"thinkingmachines/inkling": {
+"inputs": [
+"text",
+"image",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"thinkingmachines/inkling-small": {
+"inputs": [
+"text",
+"image",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"thinkingmachines/inkling-small:batch": {
+"inputs": [
+"text",
+"image",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"typesafe/jev-router": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p",
+"verbosity"
+]
+},
+"unbiased/pareto-26.10": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"unbiased/pareto-26.9": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"undi95/remm-slerp-l2-13b": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"upstage/solar-mini4": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"upstage/solar-pro4": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"writer/palmyra-x5": {
+"inputs": [
+"text"
+],
+"params": [
+"max_tokens",
+"stop",
+"temperature",
+"top_k",
+"top_p"
+]
+},
+"x-ai/grok-4.20": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.20-multi-agent": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.3": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.3:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.5": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.6": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.6:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.7": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-4.7:batch": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"x-ai/grok-build-0.1": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"xiaomi/mimo-v2.5": {
+"inputs": [
+"text",
+"audio",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"xiaomi/mimo-v2.5-pro": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"response_format",
+"seed",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_logprobs",
+"top_p"
+]
+},
+"xiaomi/mimo-v2.6-flash": {
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"xiaomi/mimo-v2.6-pro": {
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"xiaomi/mimo-v2.6-pro-ultraspeed": {
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"response_format",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"xingchen-agi/xing4.0-29b-a4b:free": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.5": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.5-air": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.5v": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.6": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.6v": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.7": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-4.7-flash": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5-turbo": {
+"inputs": [
+"text"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-5.1": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.2": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.2:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.3": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.3-flash": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.3-flash:batch": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.3-flashx": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-5.3-flashx-legal": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"z-ai/glm-5.3-prime": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5.3:batch": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"z-ai/glm-5v-turbo": {
+"inputs": [
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"response_format",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_p"
+]
+},
+"~anthropic/claude-fable-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~anthropic/claude-haiku-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~anthropic/claude-opus-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~anthropic/claude-sonnet-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"stop",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~deepseek/deepseek-flash-latest": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~deepseek/deepseek-pro-latest": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~deepseek/deepseek-v4-flash-latest": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_a",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~google/gemini-flash-latest": {
+"inputs": [
+"text",
+"image",
+"video",
+"file",
+"audio"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"~google/gemini-pro-latest": {
+"inputs": [
+"audio",
+"file",
+"image",
+"text",
+"video"
+],
+"params": [
+"include_reasoning",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"~moonshotai/kimi-latest": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_completion_tokens",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~openai/gpt-astra-latest": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~openai/gpt-luna-latest": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~openai/gpt-mini-latest": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~openai/gpt-sol-latest": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~openai/gpt-terra-latest": {
+"inputs": [
+"file",
+"image",
+"text"
+],
+"params": [
+"include_reasoning",
+"max_completion_tokens",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"structured_outputs",
+"tool_choice",
+"tools",
+"verbosity"
+]
+},
+"~unbiased/pareto-latest": {
+"inputs": [
+"text",
+"image"
+],
+"params": [
+"max_tokens",
+"temperature",
+"tool_choice",
+"tools",
+"top_p"
+]
+},
+"~x-ai/grok-latest": {
+"inputs": [
+"text",
+"image",
+"file"
+],
+"params": [
+"include_reasoning",
+"logprobs",
+"max_tokens",
+"reasoning",
+"reasoning_effort",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~z-ai/glm-flash-latest": {
+"inputs": [
+"text",
+"image",
+"video"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+},
+"~z-ai/glm-latest": {
+"inputs": [
+"text"
+],
+"params": [
+"frequency_penalty",
+"include_reasoning",
+"logit_bias",
+"logprobs",
+"max_tokens",
+"min_p",
+"parallel_tool_calls",
+"presence_penalty",
+"reasoning",
+"reasoning_effort",
+"repetition_penalty",
+"response_format",
+"seed",
+"stop",
+"structured_outputs",
+"temperature",
+"tool_choice",
+"tools",
+"top_k",
+"top_logprobs",
+"top_p"
+]
+}
+},
+"stt": {
+"assemblyai/universal-3-5-pro": {},
+"assemblyai/universal-3-6-pro": {},
+"deepgram/nova-3": {},
+"elevenlabs/scribe-v2": {},
+"elevenlabs/scribe-v2-medical": {},
+"fish-audio/transcribe-1": {},
+"fish-audio/transcribe-1-pro": {},
+"google/chirp-3": {},
+"google/gemini-3.5-transcribe": {},
+"meta/muse-voice-transcribe-1.0": {},
+"microsoft/mai-transcribe-1.5": {},
+"microsoft/mai-transcribe-2": {},
+"mistralai/voxtral-mini-3b-2507": {},
+"mistralai/voxtral-mini-transcribe": {},
+"mistralai/voxtral-mini-transcribe-3-0": {},
+"mistralai/voxtral-small-24b-2507-stt": {},
+"mistralai/voxtral-small-transcribe-3-0": {},
+"moondream/parakeet-ultra": {},
+"nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b": {},
+"nvidia/nemotron-3.5-transcribe": {},
+"nvidia/parakeet-tdt-0.6b-v3": {},
+"openai/gpt-4o-mini-transcribe": {},
+"openai/gpt-4o-transcribe": {},
+"openai/gpt-transcribe": {},
+"openai/whisper-1": {},
+"openai/whisper-large-v3": {},
+"openai/whisper-large-v3-turbo": {},
+"qwen/qwen3-asr-0.6b": {},
+"qwen/qwen3-asr-1.7b": {},
+"x-ai/grok-stt-1.0": {}
+},
+"tts": {
+"assemblyai/assemblyai-tts-1": {
+"voices": [
+"aai-antonioluis",
+"aai-audrey",
+"aai-carrie",
+"aai-constanza",
+"aai-donatien",
+"aai-ernest",
+"aai-ewald",
+"aai-gunther",
+"aai-hailey",
+"aai-jorg",
+"aai-kyla",
+"aai-magdalena",
+"aai-malvina",
+"aai-nancy",
+"aai-oriol",
+"aai-peter",
+"aai-sara",
+"aai-steven",
+"aai-titus",
+"aai-troy"
+]
+},
+"bytedance-seed/seed-audio-1-0": {
+"voices": []
+},
+"canopylabs/orpheus-3b-0.1-ft": {
+"voices": [
+"tara",
+"leah",
+"jess",
+"leo",
+"dan",
+"mia",
+"zac"
+]
+},
+"deepgram/aura-2": {
+"voices": [
+"aura-2-thalia-en",
+"aura-2-agathe-fr",
+"aura-2-agustina-es",
+"aura-2-alvaro-es",
+"aura-2-ama-ja",
+"aura-2-amalthea-en",
+"aura-2-andromeda-en",
+"aura-2-antonia-es",
+"aura-2-apollo-en",
+"aura-2-aquila-es",
+"aura-2-arcas-en",
+"aura-2-aries-en",
+"aura-2-asteria-en",
+"aura-2-athena-en",
+"aura-2-atlas-en",
+"aura-2-aurelia-de",
+"aura-2-aurora-en",
+"aura-2-beatrix-nl",
+"aura-2-callista-en",
+"aura-2-carina-es",
+"aura-2-celeste-es",
+"aura-2-cesare-it",
+"aura-2-cinzia-it",
+"aura-2-cora-en",
+"aura-2-cordelia-en",
+"aura-2-cornelia-nl",
+"aura-2-daphne-nl",
+"aura-2-delia-en",
+"aura-2-demetra-it",
+"aura-2-diana-es",
+"aura-2-dionisio-it",
+"aura-2-draco-en",
+"aura-2-ebisu-ja",
+"aura-2-elara-de",
+"aura-2-electra-en",
+"aura-2-elio-it",
+"aura-2-estrella-es",
+"aura-2-fabian-de",
+"aura-2-flavio-it",
+"aura-2-fujin-ja",
+"aura-2-gloria-es",
+"aura-2-harmonia-en",
+"aura-2-hector-fr",
+"aura-2-helena-en",
+"aura-2-hera-en",
+"aura-2-hermes-en",
+"aura-2-hestia-nl",
+"aura-2-hyperion-en",
+"aura-2-iris-en",
+"aura-2-izanami-ja",
+"aura-2-janus-en",
+"aura-2-javier-es",
+"aura-2-julius-de",
+"aura-2-juno-en",
+"aura-2-jupiter-en",
+"aura-2-kara-de",
+"aura-2-lara-de",
+"aura-2-lars-nl",
+"aura-2-leda-nl",
+"aura-2-livia-it",
+"aura-2-luciano-es",
+"aura-2-luna-en",
+"aura-2-maia-it",
+"aura-2-mars-en",
+"aura-2-melia-it",
+"aura-2-minerva-en",
+"aura-2-neptune-en",
+"aura-2-nestor-es",
+"aura-2-odysseus-en",
+"aura-2-olivia-es",
+"aura-2-ophelia-en",
+"aura-2-orion-en",
+"aura-2-orpheus-en",
+"aura-2-pandora-en",
+"aura-2-phoebe-en",
+"aura-2-pluto-en",
+"aura-2-rhea-nl",
+"aura-2-roman-nl",
+"aura-2-sander-nl",
+"aura-2-saturn-en",
+"aura-2-selena-es",
+"aura-2-selene-en",
+"aura-2-silvia-es",
+"aura-2-sirio-es",
+"aura-2-theia-en",
+"aura-2-uzume-ja",
+"aura-2-valerio-es",
+"aura-2-vesta-en",
+"aura-2-viktoria-de",
+"aura-2-zeus-en"
+]
+},
+"deepgram/flux-tts": {
+"voices": [
+"flux-alexis-en",
+"flux-bree-en",
+"flux-brittany-en",
+"flux-brooke-en",
+"flux-bruce-en",
+"flux-cliff-en",
+"flux-cole-en",
+"flux-colin-en",
+"flux-conor-en",
+"flux-donovan-en",
+"flux-drew-en",
+"flux-elise-en",
+"flux-gemma-en",
+"flux-haley-en",
+"flux-hannah-en",
+"flux-heather-en",
+"flux-jack-en",
+"flux-kai-en",
+"flux-kelsey-en",
+"flux-kit-en",
+"flux-maeve-en",
+"flux-marcelo-en",
+"flux-marcus-en",
+"flux-meena-en",
+"flux-meghan-en",
+"flux-miles-en",
+"flux-naveen-en",
+"flux-paige-en",
+"flux-priya-en",
+"flux-rufus-en",
+"flux-sean-en",
+"flux-sharon-en",
+"flux-sienna-en",
+"flux-tanner-en",
+"flux-wade-en",
+"flux-wes-en"
+]
+},
+"elevenlabs/eleven-flash-v2": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-flash-v2.5": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-multilingual-v2": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-turbo-v2": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-turbo-v2.5": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-v3": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-v3-conversational": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-v4": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"elevenlabs/eleven-v4-turbo": {
+"voices": [
+"george",
+"sarah",
+"adam",
+"alice",
+"bella",
+"bill",
+"brian",
+"callum",
+"charlie",
+"chris",
+"daniel",
+"eric",
+"harry",
+"jessica",
+"laura",
+"liam",
+"lily",
+"matilda",
+"river",
+"roger",
+"will"
+]
+},
+"fish-audio/drama-3": {
+"voices": []
+},
+"fish-audio/s1": {
+"voices": []
+},
+"fish-audio/s2-pro": {
+"voices": []
+},
+"fish-audio/s2.1-pro": {
+"voices": []
+},
+"fish-audio/s2.1-pro-free:free": {
+"voices": []
+},
+"google/gemini-3.1-flash-tts-preview": {
+"voices": [
+"Zephyr",
+"Puck",
+"Charon",
+"Kore",
+"Fenrir",
+"Leda",
+"Orus",
+"Aoede",
+"Callirrhoe",
+"Autonoe",
+"Enceladus",
+"Iapetus",
+"Umbriel",
+"Algieba",
+"Despina",
+"Erinome",
+"Algenib",
+"Rasalgethi",
+"Laomedeia",
+"Achernar",
+"Alnilam",
+"Schedar",
+"Gacrux",
+"Pulcherrima",
+"Achird",
+"Zubenelgenubi",
+"Vindemiatrix",
+"Sadachbia",
+"Sadaltager",
+"Sulafat"
+]
+},
+"google/gemini-3.8-flash-lite-tts": {
+"voices": [
+"Zephyr",
+"Puck",
+"Charon",
+"Kore",
+"Fenrir",
+"Leda",
+"Orus",
+"Aoede",
+"Callirrhoe",
+"Autonoe",
+"Enceladus",
+"Iapetus",
+"Umbriel",
+"Algieba",
+"Despina",
+"Erinome",
+"Algenib",
+"Rasalgethi",
+"Laomedeia",
+"Achernar",
+"Alnilam",
+"Schedar",
+"Gacrux",
+"Pulcherrima",
+"Achird",
+"Zubenelgenubi",
+"Vindemiatrix",
+"Sadachbia",
+"Sadaltager",
+"Sulafat"
+]
+},
+"google/gemini-3.8-flash-tts": {
+"voices": [
+"Zephyr",
+"Puck",
+"Charon",
+"Kore",
+"Fenrir",
+"Leda",
+"Orus",
+"Aoede",
+"Callirrhoe",
+"Autonoe",
+"Enceladus",
+"Iapetus",
+"Umbriel",
+"Algieba",
+"Despina",
+"Erinome",
+"Algenib",
+"Rasalgethi",
+"Laomedeia",
+"Achernar",
+"Alnilam",
+"Schedar",
+"Gacrux",
+"Pulcherrima",
+"Achird",
+"Zubenelgenubi",
+"Vindemiatrix",
+"Sadachbia",
+"Sadaltager",
+"Sulafat"
+]
+},
+"hexgrad/kokoro-82m": {
+"voices": [
+"af_alloy",
+"af_aoede",
+"af_bella",
+"af_heart",
+"af_jessica",
+"af_kore",
+"af_nicole",
+"af_nova",
+"af_river",
+"af_sarah",
+"af_sky",
+"am_adam",
+"am_echo",
+"am_eric",
+"am_fenrir",
+"am_liam",
+"am_michael",
+"am_onyx",
+"am_puck",
+"am_santa",
+"bf_alice",
+"bf_emma",
+"bf_isabella",
+"bf_lily",
+"bm_daniel",
+"bm_fable",
+"bm_george",
+"bm_lewis",
+"ef_dora",
+"em_alex",
+"em_santa",
+"ff_siwis",
+"hf_alpha",
+"hf_beta",
+"hm_omega",
+"hm_psi",
+"if_sara",
+"im_nicola",
+"jf_alpha",
+"jf_gongitsune",
+"jf_nezumi",
+"jf_tebukuro",
+"jm_kumo",
+"pf_dora",
+"pm_alex",
+"pm_santa",
+"zf_xiaobei",
+"zf_xiaoni",
+"zf_xiaoxiao",
+"zf_xiaoyi",
+"zm_yunjian",
+"zm_yunxi",
+"zm_yunxia",
+"zm_yunyang"
+]
+},
+"heygen/heygen-voice-1": {
+"voices": [
+"nadine",
+"tabitha",
+"bram",
+"gareth",
+"noelle",
+"meredith",
+"sabrina",
+"lucian",
+"weston",
+"vincent"
+]
+},
+"heygen/heygen-voice-1-turbo": {
+"voices": [
+"nadine",
+"tabitha",
+"bram",
+"gareth",
+"noelle",
+"meredith",
+"sabrina",
+"lucian",
+"weston",
+"vincent"
+]
+},
+"heygen/heygen-voice-1-turbo:free": {
+"voices": [
+"nadine",
+"tabitha",
+"bram",
+"gareth",
+"noelle",
+"meredith",
+"sabrina",
+"lucian",
+"weston",
+"vincent"
+]
+},
+"microsoft/mai-voice-2": {
+"voices": [
+"en-US-Harper:MAI-Voice-2",
+"es-MX-Valeria:MAI-Voice-2",
+"fr-FR-Soleil:MAI-Voice-2",
+"de-DE-Klaus:MAI-Voice-2"
+]
+},
+"microsoft/mai-voice-2-flash": {
+"voices": [
+"en-US-Harper:MAI-Voice-2",
+"es-MX-Valeria:MAI-Voice-2",
+"fr-FR-Soleil:MAI-Voice-2",
+"de-DE-Klaus:MAI-Voice-2"
+]
+},
+"microsoft/mai-voice-2.1": {
+"voices": [
+"cs-CZ-Grant:MAI-Voice-2.1",
+"cs-CZ-Harper:MAI-Voice-2.1",
+"da-DK-Grant:MAI-Voice-2.1",
+"da-DK-Harper:MAI-Voice-2.1",
+"de-DE-Grant:MAI-Voice-2.1",
+"de-DE-Harper:MAI-Voice-2.1",
+"de-DE-Klaus:MAI-Voice-2.1",
+"de-DE-Mia:MAI-Voice-2.1",
+"en-AU-Isla:MAI-Voice-2.1",
+"en-GB-Emily:MAI-Voice-2.1",
+"en-GB-Harry:MAI-Voice-2.1",
+"en-IN-Dhruv:MAI-Voice-2.1",
+"en-IN-Priya:MAI-Voice-2.1",
+"en-US-Ethan:MAI-Voice-2.1",
+"en-US-Grant:MAI-Voice-2.1",
+"en-US-Harper:MAI-Voice-2.1",
+"en-US-Iris:MAI-Voice-2.1",
+"en-US-Jasper:MAI-Voice-2.1",
+"en-US-Olivia:MAI-Voice-2.1",
+"en-US-Sage:MAI-Voice-2.1",
+"es-ES-Marta:MAI-Voice-2.1",
+"es-MX-Alejo:MAI-Voice-2.1",
+"es-MX-Grant:MAI-Voice-2.1",
+"es-MX-Harper:MAI-Voice-2.1",
+"es-MX-Valeria:MAI-Voice-2.1",
+"fi-FI-Grant:MAI-Voice-2.1",
+"fi-FI-Harper:MAI-Voice-2.1",
+"fr-FR-Grant:MAI-Voice-2.1",
+"fr-FR-Harper:MAI-Voice-2.1",
+"fr-FR-Marc:MAI-Voice-2.1",
+"fr-FR-Soleil:MAI-Voice-2.1",
+"hi-IN-Arjun:MAI-Voice-2.1",
+"hi-IN-Dhruv:MAI-Voice-2.1",
+"hi-IN-Grant:MAI-Voice-2.1",
+"hi-IN-Harper:MAI-Voice-2.1",
+"hi-IN-Kavya:MAI-Voice-2.1",
+"hi-IN-Priya:MAI-Voice-2.1",
+"hu-HU-Bence:MAI-Voice-2.1",
+"hu-HU-Grant:MAI-Voice-2.1",
+"hu-HU-Harper:MAI-Voice-2.1",
+"hu-HU-Levente:MAI-Voice-2.1",
+"hu-HU-Lilla:MAI-Voice-2.1",
+"hu-HU-Reka:MAI-Voice-2.1",
+"id-ID-Grant:MAI-Voice-2.1",
+"id-ID-Harper:MAI-Voice-2.1",
+"it-IT-Grant:MAI-Voice-2.1",
+"it-IT-Harper:MAI-Voice-2.1",
+"it-IT-Luca:MAI-Voice-2.1",
+"it-IT-Rosa:MAI-Voice-2.1",
+"ko-KR-Grant:MAI-Voice-2.1",
+"ko-KR-Haena:MAI-Voice-2.1",
+"ko-KR-Harper:MAI-Voice-2.1",
+"ko-KR-Junho:MAI-Voice-2.1",
+"nb-NO-Grant:MAI-Voice-2.1",
+"nb-NO-Harper:MAI-Voice-2.1",
+"nl-NL-Grant:MAI-Voice-2.1",
+"nl-NL-Harper:MAI-Voice-2.1",
+"nl-NL-Sander:MAI-Voice-2.1",
+"pl-PL-Grant:MAI-Voice-2.1",
+"pl-PL-Harper:MAI-Voice-2.1",
+"pt-BR-Caio:MAI-Voice-2.1",
+"pt-BR-Grant:MAI-Voice-2.1",
+"pt-BR-Harper:MAI-Voice-2.1",
+"pt-BR-Luana:MAI-Voice-2.1",
+"pt-BR-Pedro:MAI-Voice-2.1",
+"pt-BR-Rafael:MAI-Voice-2.1",
+"pt-PT-Grant:MAI-Voice-2.1",
+"pt-PT-Harper:MAI-Voice-2.1",
+"pt-PT-Rui:MAI-Voice-2.1",
+"ro-RO-Andrei:MAI-Voice-2.1",
+"ro-RO-Elena:MAI-Voice-2.1",
+"ro-RO-Grant:MAI-Voice-2.1",
+"ro-RO-Harper:MAI-Voice-2.1",
+"ro-RO-Ioana:MAI-Voice-2.1",
+"ro-RO-Radu:MAI-Voice-2.1",
+"ru-RU-Grant:MAI-Voice-2.1",
+"ru-RU-Harper:MAI-Voice-2.1",
+"ru-RU-Lev:MAI-Voice-2.1",
+"ru-RU-Masha:MAI-Voice-2.1",
+"sv-SE-Grant:MAI-Voice-2.1",
+"sv-SE-Harper:MAI-Voice-2.1",
+"th-TH-Grant:MAI-Voice-2.1",
+"th-TH-Harper:MAI-Voice-2.1",
+"th-TH-Krit:MAI-Voice-2.1",
+"th-TH-Nattapong:MAI-Voice-2.1",
+"tr-TR-Aydin:MAI-Voice-2.1",
+"tr-TR-Elif:MAI-Voice-2.1",
+"tr-TR-Grant:MAI-Voice-2.1",
+"tr-TR-Harper:MAI-Voice-2.1",
+"vi-VN-Grant:MAI-Voice-2.1",
+"vi-VN-Harper:MAI-Voice-2.1",
+"zh-CN-Bo:MAI-Voice-2.1",
+"zh-CN-Grant:MAI-Voice-2.1",
+"zh-CN-Harper:MAI-Voice-2.1",
+"zh-CN-Lan:MAI-Voice-2.1",
+"zh-CN-Mei:MAI-Voice-2.1",
+"zh-CN-Wei:MAI-Voice-2.1"
+]
+},
+"microsoft/mai-voice-2.1-flash": {
+"voices": [
+"cs-CZ-Grant:MAI-Voice-2.1-Flash",
+"cs-CZ-Harper:MAI-Voice-2.1-Flash",
+"da-DK-Grant:MAI-Voice-2.1-Flash",
+"da-DK-Harper:MAI-Voice-2.1-Flash",
+"de-DE-Grant:MAI-Voice-2.1-Flash",
+"de-DE-Harper:MAI-Voice-2.1-Flash",
+"de-DE-Klaus:MAI-Voice-2.1-Flash",
+"de-DE-Mia:MAI-Voice-2.1-Flash",
+"en-AU-Isla:MAI-Voice-2.1-Flash",
+"en-GB-Emily:MAI-Voice-2.1-Flash",
+"en-GB-Harry:MAI-Voice-2.1-Flash",
+"en-IN-Dhruv:MAI-Voice-2.1-Flash",
+"en-IN-Priya:MAI-Voice-2.1-Flash",
+"en-US-Ethan:MAI-Voice-2.1-Flash",
+"en-US-Grant:MAI-Voice-2.1-Flash",
+"en-US-Harper:MAI-Voice-2.1-Flash",
+"en-US-Iris:MAI-Voice-2.1-Flash",
+"en-US-Jasper:MAI-Voice-2.1-Flash",
+"en-US-Olivia:MAI-Voice-2.1-Flash",
+"en-US-Sage:MAI-Voice-2.1-Flash",
+"es-ES-Marta:MAI-Voice-2.1-Flash",
+"es-MX-Alejo:MAI-Voice-2.1-Flash",
+"es-MX-Grant:MAI-Voice-2.1-Flash",
+"es-MX-Harper:MAI-Voice-2.1-Flash",
+"es-MX-Valeria:MAI-Voice-2.1-Flash",
+"fi-FI-Grant:MAI-Voice-2.1-Flash",
+"fi-FI-Harper:MAI-Voice-2.1-Flash",
+"fr-FR-Grant:MAI-Voice-2.1-Flash",
+"fr-FR-Harper:MAI-Voice-2.1-Flash",
+"fr-FR-Marc:MAI-Voice-2.1-Flash",
+"fr-FR-Soleil:MAI-Voice-2.1-Flash",
+"hi-IN-Arjun:MAI-Voice-2.1-Flash",
+"hi-IN-Dhruv:MAI-Voice-2.1-Flash",
+"hi-IN-Grant:MAI-Voice-2.1-Flash",
+"hi-IN-Harper:MAI-Voice-2.1-Flash",
+"hi-IN-Kavya:MAI-Voice-2.1-Flash",
+"hi-IN-Priya:MAI-Voice-2.1-Flash",
+"hu-HU-Bence:MAI-Voice-2.1-Flash",
+"hu-HU-Grant:MAI-Voice-2.1-Flash",
+"hu-HU-Harper:MAI-Voice-2.1-Flash",
+"hu-HU-Levente:MAI-Voice-2.1-Flash",
+"hu-HU-Lilla:MAI-Voice-2.1-Flash",
+"hu-HU-Reka:MAI-Voice-2.1-Flash",
+"id-ID-Grant:MAI-Voice-2.1-Flash",
+"id-ID-Harper:MAI-Voice-2.1-Flash",
+"it-IT-Grant:MAI-Voice-2.1-Flash",
+"it-IT-Harper:MAI-Voice-2.1-Flash",
+"it-IT-Luca:MAI-Voice-2.1-Flash",
+"it-IT-Rosa:MAI-Voice-2.1-Flash",
+"ko-KR-Grant:MAI-Voice-2.1-Flash",
+"ko-KR-Haena:MAI-Voice-2.1-Flash",
+"ko-KR-Harper:MAI-Voice-2.1-Flash",
+"ko-KR-Junho:MAI-Voice-2.1-Flash",
+"nb-NO-Grant:MAI-Voice-2.1-Flash",
+"nb-NO-Harper:MAI-Voice-2.1-Flash",
+"nl-NL-Grant:MAI-Voice-2.1-Flash",
+"nl-NL-Harper:MAI-Voice-2.1-Flash",
+"nl-NL-Sander:MAI-Voice-2.1-Flash",
+"pl-PL-Grant:MAI-Voice-2.1-Flash",
+"pl-PL-Harper:MAI-Voice-2.1-Flash",
+"pt-BR-Caio:MAI-Voice-2.1-Flash",
+"pt-BR-Grant:MAI-Voice-2.1-Flash",
+"pt-BR-Harper:MAI-Voice-2.1-Flash",
+"pt-BR-Luana:MAI-Voice-2.1-Flash",
+"pt-BR-Pedro:MAI-Voice-2.1-Flash",
+"pt-BR-Rafael:MAI-Voice-2.1-Flash",
+"pt-PT-Grant:MAI-Voice-2.1-Flash",
+"pt-PT-Harper:MAI-Voice-2.1-Flash",
+"pt-PT-Rui:MAI-Voice-2.1-Flash",
+"ro-RO-Andrei:MAI-Voice-2.1-Flash",
+"ro-RO-Elena:MAI-Voice-2.1-Flash",
+"ro-RO-Grant:MAI-Voice-2.1-Flash",
+"ro-RO-Harper:MAI-Voice-2.1-Flash",
+"ro-RO-Ioana:MAI-Voice-2.1-Flash",
+"ro-RO-Radu:MAI-Voice-2.1-Flash",
+"ru-RU-Grant:MAI-Voice-2.1-Flash",
+"ru-RU-Harper:MAI-Voice-2.1-Flash",
+"ru-RU-Lev:MAI-Voice-2.1-Flash",
+"ru-RU-Masha:MAI-Voice-2.1-Flash",
+"sv-SE-Grant:MAI-Voice-2.1-Flash",
+"sv-SE-Harper:MAI-Voice-2.1-Flash",
+"th-TH-Grant:MAI-Voice-2.1-Flash",
+"th-TH-Harper:MAI-Voice-2.1-Flash",
+"th-TH-Krit:MAI-Voice-2.1-Flash",
+"th-TH-Nattapong:MAI-Voice-2.1-Flash",
+"tr-TR-Aydin:MAI-Voice-2.1-Flash",
+"tr-TR-Elif:MAI-Voice-2.1-Flash",
+"tr-TR-Grant:MAI-Voice-2.1-Flash",
+"tr-TR-Harper:MAI-Voice-2.1-Flash",
+"vi-VN-Grant:MAI-Voice-2.1-Flash",
+"vi-VN-Harper:MAI-Voice-2.1-Flash",
+"zh-CN-Bo:MAI-Voice-2.1-Flash",
+"zh-CN-Grant:MAI-Voice-2.1-Flash",
+"zh-CN-Harper:MAI-Voice-2.1-Flash",
+"zh-CN-Lan:MAI-Voice-2.1-Flash",
+"zh-CN-Mei:MAI-Voice-2.1-Flash",
+"zh-CN-Wei:MAI-Voice-2.1-Flash"
+]
+},
+"minimax/speech-2.8-hd": {
+"voices": [
+"English_expressive_narrator",
+"English_radiant_girl",
+"English_magnetic_voiced_man",
+"English_compelling_lady1",
+"English_Aussie_Bloke",
+"English_captivating_female1",
+"English_Upbeat_Woman",
+"English_Trustworth_Man",
+"English_CalmWoman",
+"English_UpsetGirl",
+"English_Gentle-voiced_man",
+"English_Whispering_girl",
+"English_Diligent_Man",
+"English_Graceful_Lady",
+"English_ReservedYoungMan",
+"English_PlayfulGirl",
+"English_ManWithDeepVoice",
+"English_MaturePartner",
+"English_FriendlyPerson",
+"English_MatureBoss",
+"English_Debator",
+"English_LovelyGirl",
+"English_Steadymentor",
+"English_Deep-VoicedGentleman",
+"English_Wiselady",
+"English_CaptivatingStoryteller",
+"English_DecentYoungMan",
+"English_SentimentalLady",
+"English_ImposingManner",
+"English_SadTeen",
+"English_PassionateWarrior",
+"English_WiseScholar",
+"English_Soft-spokenGirl",
+"English_SereneWoman",
+"English_ConfidentWoman",
+"English_PatientMan",
+"English_Comedian",
+"English_BossyLeader",
+"English_Strong-WilledBoy",
+"English_StressedLady",
+"English_AssertiveQueen",
+"English_AnimeCharacter",
+"English_Jovialman",
+"English_WhimsicalGirl",
+"English_Kind-heartedGirl"
+]
+},
+"minimax/speech-2.8-turbo": {
+"voices": [
+"English_expressive_narrator",
+"English_radiant_girl",
+"English_magnetic_voiced_man",
+"English_compelling_lady1",
+"English_Aussie_Bloke",
+"English_captivating_female1",
+"English_Upbeat_Woman",
+"English_Trustworth_Man",
+"English_CalmWoman",
+"English_UpsetGirl",
+"English_Gentle-voiced_man",
+"English_Whispering_girl",
+"English_Diligent_Man",
+"English_Graceful_Lady",
+"English_ReservedYoungMan",
+"English_PlayfulGirl",
+"English_ManWithDeepVoice",
+"English_MaturePartner",
+"English_FriendlyPerson",
+"English_MatureBoss",
+"English_Debator",
+"English_LovelyGirl",
+"English_Steadymentor",
+"English_Deep-VoicedGentleman",
+"English_Wiselady",
+"English_CaptivatingStoryteller",
+"English_DecentYoungMan",
+"English_SentimentalLady",
+"English_ImposingManner",
+"English_SadTeen",
+"English_PassionateWarrior",
+"English_WiseScholar",
+"English_Soft-spokenGirl",
+"English_SereneWoman",
+"English_ConfidentWoman",
+"English_PatientMan",
+"English_Comedian",
+"English_BossyLeader",
+"English_Strong-WilledBoy",
+"English_StressedLady",
+"English_AssertiveQueen",
+"English_AnimeCharacter",
+"English_Jovialman",
+"English_WhimsicalGirl",
+"English_Kind-heartedGirl"
+]
+},
+"mistralai/voxtral-mini-tts-2603": {
+"voices": [
+"en_paul_sad",
+"en_paul_neutral",
+"en_paul_happy",
+"en_paul_frustrated",
+"en_paul_excited",
+"en_paul_confident",
+"en_paul_cheerful",
+"en_paul_angry",
+"gb_oliver_neutral",
+"gb_oliver_sad",
+"gb_oliver_excited",
+"gb_oliver_curious",
+"gb_oliver_confident",
+"gb_oliver_cheerful",
+"gb_oliver_angry",
+"gb_jane_sarcasm",
+"gb_jane_confused",
+"gb_jane_shameful",
+"gb_jane_sad",
+"gb_jane_neutral",
+"gb_jane_jealousy",
+"gb_jane_frustrated",
+"gb_jane_curious",
+"gb_jane_confident",
+"fr_marie_sad",
+"fr_marie_neutral",
+"fr_marie_happy",
+"fr_marie_excited",
+"fr_marie_curious",
+"fr_marie_angry"
+]
+},
+"mistralai/voxtral-mini-tts-3-0": {
+"voices": [
+"voice_3150",
+"voice_478",
+"voice_447",
+"voice_485",
+"en_paul_sad",
+"en_paul_neutral",
+"en_paul_happy",
+"en_paul_frustrated",
+"en_paul_excited",
+"en_paul_confident",
+"en_paul_cheerful",
+"en_paul_angry",
+"voice_3149",
+"voice_3147",
+"voice_591",
+"voice_590",
+"voice_1788",
+"voice_1787",
+"voice_1786",
+"gb_oliver_neutral",
+"gb_jane_sarcasm",
+"gb_jane_confused",
+"gb_oliver_sad",
+"gb_oliver_excited",
+"gb_oliver_curious",
+"gb_oliver_confident",
+"gb_oliver_cheerful",
+"gb_oliver_angry",
+"gb_jane_shameful",
+"gb_jane_sad",
+"gb_jane_neutral",
+"gb_jane_jealousy",
+"gb_jane_frustrated",
+"gb_jane_curious",
+"gb_jane_confident",
+"voice_479",
+"voice_3143",
+"voice_481",
+"voice_483",
+"voice_592",
+"voice_3137",
+"voice_589",
+"voice_3141",
+"fr_marie_sad",
+"fr_marie_neutral",
+"fr_marie_happy",
+"fr_marie_excited",
+"fr_marie_curious",
+"fr_marie_angry",
+"voice_3153",
+"voice_3139",
+"voice_3146",
+"voice_482",
+"voice_3133",
+"voice_3136",
+"voice_3135",
+"voice_3145",
+"voice_3134",
+"voice_3154",
+"voice_480",
+"voice_3155",
+"voice_3132",
+"voice_3138",
+"voice_3140",
+"voice_3144",
+"voice_3142"
+]
+},
+"qwen/qwen-audio-3.0-tts-flash": {
+"voices": [
+"loongjohn",
+"longanhuan_v3.6"
+]
+},
+"qwen/qwen-audio-3.0-tts-plus": {
+"voices": [
+"longanlingxin",
+"longanlufeng"
+]
+},
+"sesame/csm-1b": {
+"voices": [
+"conversational_a",
+"conversational_b",
+"read_speech_a",
+"read_speech_b",
+"read_speech_c",
+"read_speech_d",
+"none"
+]
+},
+"x-ai/grok-voice-tts-1.0": {
+"voices": [
+"eve",
+"ara",
+"rex",
+"sal",
+"leo"
+]
+}
+},
+"video": {
+"alibaba/happyhorse-1.0": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4",
+"21:9",
+"9:21"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"alibaba/happyhorse-1.1": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4",
+"21:9",
+"9:21"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"alibaba/wan-2.6": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+5,
+10
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"negative_prompt",
+"enable_prompt_expansion",
+"shot_type",
+"audio",
+"size"
+],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"alibaba/wan-2.7": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4"
+],
+"creativity": null,
+"durations": [
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"negative_prompt",
+"prompt_extend",
+"audio",
+"ratio",
+"last_image",
+"video",
+"videos",
+"images"
+],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"alibaba/wan-3.0": {
+"aspect_ratios": [
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,
+26,
+27,
+28,
+29,
+30
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"alibaba/wan-3.0-prime": {
+"aspect_ratios": [
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,
+26,
+27,
+28,
+29,
+30
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"black-forest-labs/flux-3-video": {
+"aspect_ratios": [
+"21:9",
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video"
+],
+"passthrough": [
+"safety_tolerance",
+"version",
+"draft"
+],
+"resolutions": [
+"720p",
+"1080p",
+"2K",
+"4K"
+],
+"seed": false,
+"upscale_factor": null
+},
+"black-forest-labs/flux-video-edit": {
+"aspect_ratios": null,
+"creativity": null,
+"durations": null,
+"frames": [],
+"generate_audio": false,
+"inputs": [
+"text",
+"video"
+],
+"passthrough": [
+"safety_tolerance"
+],
+"resolutions": null,
+"seed": false,
+"upscale_factor": null
+},
+"black-forest-labs/flux-video-upscale": {
+"aspect_ratios": null,
+"creativity": [
+0,
+1
+],
+"durations": null,
+"frames": [],
+"generate_audio": false,
+"inputs": [
+"text",
+"video"
+],
+"passthrough": [
+"safety_tolerance"
+],
+"resolutions": null,
+"seed": false,
+"upscale_factor": {
+"max": 3,
+"min": 1.5
+}
+},
+"bytedance/seedance-1-5-pro": {
+"aspect_ratios": [
+"1:1",
+"3:4",
+"9:16",
+"9:21",
+"4:3",
+"16:9",
+"21:9"
+],
+"creativity": null,
+"durations": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"watermark",
+"req_key"
+],
+"resolutions": [
+"480p",
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"bytedance/seedance-2.0": {
+"aspect_ratios": [
+"1:1",
+"3:4",
+"9:16",
+"4:3",
+"16:9",
+"21:9",
+"9:21"
+],
+"creativity": null,
+"durations": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"watermark",
+"req_key"
+],
+"resolutions": [
+"480p",
+"720p",
+"1080p",
+"4K"
+],
+"seed": true,
+"upscale_factor": null
+},
+"bytedance/seedance-2.0-fast": {
+"aspect_ratios": [
+"1:1",
+"3:4",
+"9:16",
+"4:3",
+"16:9",
+"21:9",
+"9:21"
+],
+"creativity": null,
+"durations": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"watermark",
+"req_key"
+],
+"resolutions": [
+"480p",
+"720p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"bytedance/seedance-2.0-mini": {
+"aspect_ratios": [
+"1:1",
+"3:4",
+"9:16",
+"4:3",
+"16:9",
+"21:9",
+"9:21"
+],
+"creativity": null,
+"durations": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"watermark",
+"req_key",
+"return_last_frame"
+],
+"resolutions": [
+"480p",
+"720p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"bytedance/seedance-2.5": {
+"aspect_ratios": [
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16",
+"21:9"
+],
+"creativity": null,
+"durations": [
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,
+26,
+27,
+28,
+29,
+30
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"watermark",
+"req_key",
+"output_format"
+],
+"resolutions": [
+"480p",
+"720p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"google/gemini-omni-1.1-flash": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video"
+],
+"passthrough": [
+"task"
+],
+"resolutions": [
+"720p",
+"1080p",
+"4K",
+"360p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"google/gemini-omni-1.2-flash": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video"
+],
+"passthrough": [
+"task"
+],
+"resolutions": [
+"720p",
+"1080p",
+"4K",
+"360p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"google/veo-3.1": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+4,
+6,
+8
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"personGeneration",
+"aspectRatio",
+"negativePrompt",
+"conditioningScale",
+"enhancePrompt"
+],
+"resolutions": [
+"720p",
+"1080p",
+"4K"
+],
+"seed": true,
+"upscale_factor": null
+},
+"google/veo-3.1-fast": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+4,
+6,
+8
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"personGeneration",
+"aspectRatio",
+"negativePrompt",
+"conditioningScale",
+"enhancePrompt"
+],
+"resolutions": [
+"720p",
+"1080p",
+"4K"
+],
+"seed": true,
+"upscale_factor": null
+},
+"google/veo-3.1-lite": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+8,
+4,
+6
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"personGeneration",
+"aspectRatio",
+"negativePrompt",
+"conditioningScale",
+"enhancePrompt"
+],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"heygen/avatar-iv": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1"
+],
+"creativity": null,
+"durations": null,
+"frames": [],
+"generate_audio": false,
+"inputs": [
+"text",
+"image",
+"audio"
+],
+"passthrough": [
+"voice_id",
+"voice_settings",
+"motion_prompt",
+"expressiveness",
+"fit",
+"remove_background",
+"background",
+"caption",
+"title"
+],
+"resolutions": [
+"720p",
+"1080p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"heygen/heygen-video-1": {
+"aspect_ratios": [
+"21:9",
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15,
+16,
+17,
+18,
+19,
+20,
+21,
+22,
+23,
+24,
+25,
+26,
+27,
+28,
+29,
+30
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"prompt_enhancement"
+],
+"resolutions": [
+"480p",
+"768p",
+"1080p",
+"2K"
+],
+"seed": true,
+"upscale_factor": null
+},
+"kwaivgi/kling-v3.0-pro": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"negative_prompt",
+"cfg_scale"
+],
+"resolutions": [
+"720p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"kwaivgi/kling-v3.0-std": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1"
+],
+"creativity": null,
+"durations": [
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"negative_prompt",
+"cfg_scale"
+],
+"resolutions": [
+"720p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"kwaivgi/kling-video-o1": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1"
+],
+"creativity": null,
+"durations": [
+5,
+10
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"negative_prompt"
+],
+"resolutions": [
+"720p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"minimax/hailuo-2.3": {
+"aspect_ratios": [
+"16:9"
+],
+"creativity": null,
+"durations": [
+6,
+10
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"prompt_optimizer",
+"fast_pretreatment"
+],
+"resolutions": [
+"1080p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"minimax/hailuo-3": {
+"aspect_ratios": [
+"21:9",
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": true,
+"inputs": [
+"text",
+"image",
+"video",
+"audio"
+],
+"passthrough": [
+"aigc_watermark"
+],
+"resolutions": [
+"2K"
+],
+"seed": false,
+"upscale_factor": null
+},
+"minimax/hailuo-3-max": {
+"aspect_ratios": [
+"21:9",
+"16:9",
+"4:3",
+"1:1",
+"3:4",
+"9:16"
+],
+"creativity": null,
+"durations": [
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame",
+"last_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"aigc_watermark"
+],
+"resolutions": [
+"768p",
+"480p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"runway/aleph-2": {
+"aspect_ratios": [
+"16:9",
+"4:3",
+"3:2",
+"1:1",
+"2:3",
+"3:4",
+"9:16",
+"21:9"
+],
+"creativity": null,
+"durations": null,
+"frames": [],
+"generate_audio": false,
+"inputs": [
+"text",
+"image",
+"video"
+],
+"passthrough": [
+"contentModeration",
+"keyframes"
+],
+"resolutions": null,
+"seed": true,
+"upscale_factor": null
+},
+"runway/gen-4.5": {
+"aspect_ratios": [
+"16:9",
+"9:16"
+],
+"creativity": null,
+"durations": [
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [
+"contentModeration"
+],
+"resolutions": [
+"720p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"tbc/mischief-1": {
+"aspect_ratios": [
+"16:9"
+],
+"creativity": null,
+"durations": [
+3,
+5
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p"
+],
+"seed": true,
+"upscale_factor": null
+},
+"x-ai/grok-imagine-video": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3"
+],
+"creativity": null,
+"durations": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"x-ai/grok-imagine-video-1.5": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3"
+],
+"creativity": null,
+"durations": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p",
+"1080p"
+],
+"seed": false,
+"upscale_factor": null
+},
+"x-ai/grok-imagine-video-1.5-lite": {
+"aspect_ratios": [
+"16:9",
+"9:16",
+"1:1",
+"4:3",
+"3:4",
+"3:2",
+"2:3"
+],
+"creativity": null,
+"durations": [
+1,
+2,
+3,
+4,
+5,
+6,
+7,
+8,
+9,
+10,
+11,
+12,
+13,
+14,
+15
+],
+"frames": [
+"first_frame"
+],
+"generate_audio": false,
+"inputs": [
+"text",
+"image"
+],
+"passthrough": [],
+"resolutions": [
+"480p",
+"720p",
+"1080p"
+],
+"seed": false,
+"upscale_factor": null
+}
+}
+}

@@ -1,0 +1,327 @@
+{
+ "id": "98b5fe0f-54ee-46a5-a088-28ac856be7b5",
+ "revision": 0,
+ "last_node_id": 3,
+ "last_link_id": 2,
+ "nodes": [
+  {
+   "id": 1,
+   "type": "LoadImage",
+   "pos": [
+    40,
+    80
+   ],
+   "size": [
+    282.798828125,
+    102
+   ],
+   "flags": {},
+   "order": 0,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image",
+     "name": "image",
+     "type": "COMBO",
+     "widget": {
+      "name": "image"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "choose file to upload",
+     "name": "upload",
+     "type": "IMAGEUPLOAD",
+     "widget": {
+      "name": "upload"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "IMAGE",
+     "name": "IMAGE",
+     "type": "IMAGE",
+     "links": [
+      1
+     ]
+    },
+    {
+     "localized_name": "MASK",
+     "name": "MASK",
+     "type": "MASK",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "LoadImage"
+   },
+   "widgets_values": [
+    "example.png",
+    "image"
+   ],
+   "widgets_values_named": {
+    "image": "example.png",
+    "upload": "image"
+   }
+  },
+  {
+   "id": 2,
+   "type": "ORS_LLM",
+   "pos": [
+    420,
+    80
+   ],
+   "size": [
+    400,
+    472
+   ],
+   "flags": {},
+   "order": 2,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "image_1",
+     "name": "images.image_1",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": 1
+    },
+    {
+     "localized_name": "image_2",
+     "name": "images.image_2",
+     "shape": 7,
+     "type": "IMAGE",
+     "link": null
+    },
+    {
+     "localized_name": "video_1",
+     "name": "videos.video_1",
+     "shape": 7,
+     "type": "VIDEO",
+     "link": null
+    },
+    {
+     "localized_name": "audio_1",
+     "name": "audios.audio_1",
+     "shape": 7,
+     "type": "AUDIO",
+     "link": null
+    },
+    {
+     "localized_name": "prompt",
+     "name": "prompt",
+     "type": "STRING",
+     "widget": {
+      "name": "prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "model",
+     "name": "model",
+     "type": "COMBO",
+     "widget": {
+      "name": "model"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "temperature",
+     "name": "temperature",
+     "type": "FLOAT",
+     "widget": {
+      "name": "temperature"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "max_tokens",
+     "name": "max_tokens",
+     "type": "INT",
+     "widget": {
+      "name": "max_tokens"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "seed",
+     "name": "seed",
+     "type": "INT",
+     "widget": {
+      "name": "seed"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "system_prompt",
+     "name": "system_prompt",
+     "shape": 7,
+     "type": "STRING",
+     "widget": {
+      "name": "system_prompt"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "reasoning_effort",
+     "name": "reasoning_effort",
+     "shape": 7,
+     "type": "COMBO",
+     "widget": {
+      "name": "reasoning_effort"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "top_p",
+     "name": "top_p",
+     "shape": 7,
+     "type": "FLOAT",
+     "widget": {
+      "name": "top_p"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "json_schema",
+     "name": "json_schema",
+     "shape": 7,
+     "type": "STRING",
+     "widget": {
+      "name": "json_schema"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "web_search",
+     "name": "web_search",
+     "shape": 7,
+     "type": "BOOLEAN",
+     "widget": {
+      "name": "web_search"
+     },
+     "link": null
+    },
+    {
+     "localized_name": "pdf",
+     "name": "pdf",
+     "shape": 7,
+     "type": "COMBO",
+     "widget": {
+      "name": "pdf"
+     },
+     "link": null
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "STRING",
+     "name": "STRING",
+     "type": "STRING",
+     "links": [
+      2
+     ]
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "ORS_LLM"
+   },
+   "widgets_values": [
+    "Describe this image as a detailed image-generation prompt.",
+    "openai/gpt-5.6-luna",
+    0.7,
+    4096,
+    0,
+    "fixed",
+    "",
+    "off",
+    1,
+    "",
+    false,
+    "none"
+   ],
+   "widgets_values_named": {
+    "prompt": "Describe this image as a detailed image-generation prompt.",
+    "model": "openai/gpt-5.6-luna",
+    "temperature": 0.7,
+    "max_tokens": 4096,
+    "seed": 0,
+    "control_after_generate": "fixed",
+    "system_prompt": "",
+    "reasoning_effort": "off",
+    "top_p": 1,
+    "json_schema": "",
+    "web_search": false,
+    "pdf": "none"
+   }
+  },
+  {
+   "id": 3,
+   "type": "PreviewAny",
+   "pos": [
+    880,
+    80
+   ],
+   "size": [
+    210,
+    122
+   ],
+   "flags": {},
+   "order": 1,
+   "mode": 0,
+   "inputs": [
+    {
+     "localized_name": "source",
+     "name": "source",
+     "type": "*",
+     "link": 2
+    }
+   ],
+   "outputs": [
+    {
+     "localized_name": "STRING",
+     "name": "STRING",
+     "type": "STRING",
+     "links": null
+    }
+   ],
+   "properties": {
+    "Node name for S&R": "PreviewAny"
+   },
+   "widgets_values": [],
+   "widgets_values_named": {}
+  }
+ ],
+ "links": [
+  [
+   1,
+   1,
+   0,
+   2,
+   0,
+   "IMAGE"
+  ],
+  [
+   2,
+   2,
+   0,
+   3,
+   0,
+   "STRING"
+  ]
+ ],
+ "groups": [],
+ "config": {},
+ "extra": {
+  "ds": {
+   "scale": 0.9,
+   "offset": [
+    416,
+    110
+   ]
+  }
+ },
+ "version": 0.4
+}
